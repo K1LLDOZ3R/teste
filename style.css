@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #add8ef;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+}
+
+#menu{
+    display: flex;
+    gap: 20px;
+}
+
+#menu > a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+#menu > a:hover{
+    color: #fff;
+}
+
+#jogosIndie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.jogoIndie{
+    border: solid 3px #f00;
+    width: 20vw;
+    min-height: 60vh;
+}
+
+@media (width < 1025px){
+    header{flex-direction: column; padding: 0px;}
+    #logo{align-self: flex-start;}
+    #menu > a{font-size: 20px; text-align: center;}
+}
+
+@media (width < 460px){
+    header{flex-direction: column; padding: 0px;}
+    #logo{align-self: flex-start;}
+    #menu > a{font-size: 12px; text-align: center;}
+}

@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #add8ef;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+#logo{
+    width: 150px;
+    height: 150px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+}
+
+#menu{
+    display: flex;
+    gap: 20px;
+}
+
+#menu > a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+#menu > a:hover{
+    color: #fff;
+}
+
+#roomRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.room{
+    border: solid 3px #f00;
+    width: 25vw;
+    height: 25vh;
+}
+
+@media (width < 1025px){
+    header{flex-direction: column; padding: 0px;}
+    #logo{align-self: flex-start; width: 100px; height: 100px;}
+    #menu > a{font-size: 20px; text-align: center;}
+    .room{}
+}
+
+@media (width < 460px){
+    header{flex-direction: column; padding: 0px;}
+    #logo{align-self: flex-start;}
+    #menu > a{font-size: 12px; text-align: center;}
+}
